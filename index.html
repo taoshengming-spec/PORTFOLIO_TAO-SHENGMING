@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PORTFOLIO | TAO SHENGMING</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap');
+        
+        body {
+            background-color: #3d63cc;
+            color: #ffffff;
+            font-family: 'Inter', sans-serif;
+            min-height: 100vh;
+            margin: 0;
+            overflow-x: hidden; /* 允许纵向滚动，防止横向溢出 */
+        }
+
+        /* 背景网点纹理保持不变 */
+        .bg-pattern {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: radial-gradient(rgba(255,255,255,0.1) 1px, transparent 1px);
+            background-size: 30px 30px;
+            z-index: 0;
+        }
+
+        .tab-item:hover {
+            opacity: 0.7;
+            transition: opacity 0.3s;
+        }
+    </style>
+</head>
+<body class="flex flex-col justify-between p-8 md:p-16">
+
+    <div class="bg-pattern"></div>
+
+    <nav class="relative z-10 flex justify-between w-full max-w-7xl mx-auto text-sm md:text-base font-medium tracking-wide">
+        <div class="tab-item cursor-pointer">UX/UI Design</div>
+        <div class="tab-item cursor-pointer">Game Graphic</div>
+        <div class="tab-item cursor-pointer text-right">Visual Identity</div>
+    </nav>
+
+    <main class="relative z-10 flex flex-col items-center justify-center text-center py-20">
+        <div class="mb-4 text-sm md:text-lg tracking-[0.6em] font-light opacity-90">
+            ポートフォリオ
+        </div>
+        
+        <h1 class="text-7xl md:text-9xl tracking-tighter" 
+            style="font-family: 'BO Clarimo UD Demibold', sans-serif; font-weight: 600; text-shadow: 0 10px 40px rgba(0,0,0,0.2);">
+            PORTFOLIO
+        </h1>
+    </main>
+
+    <footer class="relative z-10 flex justify-between w-full max-w-7xl mx-auto text-xs md:text-sm font-medium tracking-widest opacity-80">
+        <div class="flex flex-col">
+            <span>Edition</span>
+            <span>2026.01.25</span>
+        </div>
+        <div class="flex flex-col text-right">
+            <span>Visuals by</span>
+            <span class="font-bold uppercase">TAO SHENGMING</span>
+        </div>
+    </footer>
+
+</body>
+</html>
